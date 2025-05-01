@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+
+    <!-- CSS eksternal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Konversi Suhu Celcius ke Fahrenheit</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>Masukkan suhu dalam Celcius untuk dikonversi ke Fahrenheit.</p>
+        </section>
+
+        <form id="conversion-form">
+            <div>
+                <label for="konversi-input">Celcius (&deg;C)</label>
+            </div>
+
+            <div>
+                <textarea id="konversi-input" name="konversi-input"></textarea>
+            </div>
+
+            <div>
+                <button type="button" onclick="convert()">Konversi</button>
+                <button type="reset">Reset</button>
+                <button type="button" onclick="reverse()">Reverse</button>
+            </div>
+        </form>
+
+        <section>
+            <div>
+                <label for="result-input">Fahrenheit (&deg;F)</label>
+            </div>
+
+            <div>
+                <textarea id="result-input" readonly></textarea>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <label for="calculate-detail">Cara kalkulasi:</label>
+            </div>
+
+            <div>
+                <textarea id="calculate-detail" readonly></textarea>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h2>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
+            </header>
+            
+            <hr>
+
+            <article>
+                <p>Suhu <span class="formula">S</span> dalam derajat Fahrenheit (&deg;F)</p>
+
+                <div class="formula">
+                    S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> × 9/5) + 32
+                </div>
+
+                <div>
+                    atau
+                </div>
+
+                <div class="formula">
+                    S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> × 1.8) + 32
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Figo. All rights reserved</p>
+    </footer>
+
+    <!-- Script eksternal -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
